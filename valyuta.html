@@ -28,37 +28,62 @@
             </ul>
         </div>
     </div>
-    
+
     <div class="main">
         <div class="container">
             <div class="kurs_title">
                 <div class="row">
-
-                    <div class="col-5">
+                    <div class="col-4">
                         <div class="item">Valyuta nomi</div>
                     </div>
-
-                    <div class="col-2">
-                        <div class="item">Davlat kodi</div>
-                    </div>
-
+                    <div class="col-1"></div>
                     <div class="col-3">
-                        <div class="item">O'zgarishlar
-                            <i class="bi bi-arrow-down" style="color: red;"></i>
-                            <i class="bi bi-arrow-up" style="color: green;"></i>
+                        <div class="item img-icon">O'zgarishlar
+                            <img src="img/icon__chart_down.svg" alt="chart" class="img-chart">
+                            <img src="img/icon__chart_up.svg" alt="up" class="img-up">
                         </div>
                     </div>
-                    
                     <div class="col-2">
                         <div class="item">Kurs</div>
                     </div>
-
+                    <div class="col-2 col_button">
+                        <button type="button" onclick="myFunction()" class="button-open">
+                            <img src="img/icon__refresh.svg" alt="">
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
                 <div id="root"></div>
             </div>
         </div>
     </div>
-    
+
+    <section>
+        <div class="converter_section">
+            <i class="bi bi-x-lg close-icon" onclick="retur"></i>
+            <div class="calc-bar">
+                <h3>Valyuta <br> Konvertori</h3>
+                <img src="img/img-cours.svg" alt="" class="img-cours_logo">
+            </div>
+            <div class="converter_main">
+                <div class="box-1">
+                    <input type="number" id="current_value" placeholder="1" min="1">
+                    <select name="" id="current_unit">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="box-2">
+                    <input type="number" id="another_value" readonly>
+                    <select name="" id="another_unit">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" onclick="Convert()">Convert</button>
+    </div>
+
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
